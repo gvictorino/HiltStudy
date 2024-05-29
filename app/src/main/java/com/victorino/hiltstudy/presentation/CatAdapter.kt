@@ -26,6 +26,7 @@ class CatAdapter : ListAdapter<CatVO, CatAdapter.CatViewHolder>(CatDiffCallback(
         fun bind(cat: CatVO) {
             binding.catName.text = cat.name
             binding.catOrigin.text = cat.origin
+            binding.catLength.text = cat.length
             binding.catImage.loadImageWithTopRoundedCorners(cat.image)
 
         }

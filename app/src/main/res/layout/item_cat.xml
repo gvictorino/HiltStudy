@@ -31,10 +31,11 @@
         app:layout_constraintTop_toTopOf="@id/catImage"
         app:layout_constraintStart_toEndOf="@id/catImage"
         android:textStyle="bold"
-        android:textSize="14sp"
+        android:textSize="18sp"
         tools:text="Cat Name"
+        android:layout_marginTop="4dp"
         android:layout_marginStart="8dp"
-        android:textColor="#6985D9"
+        android:textColor="#4369DC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -43,11 +44,23 @@
         app:layout_constraintTop_toBottomOf="@id/catName"
         app:layout_constraintStart_toEndOf="@id/catImage"
         android:layout_marginStart="8dp"
-        android:textSize="12sp"
+        android:textSize="14sp"
         tools:text="Cat Origin"
         android:layout_marginTop="4dp"
         android:textColor="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/catLength"
+            app:layout_constraintTop_toBottomOf="@id/catOrigin"
+            app:layout_constraintStart_toEndOf="@id/catImage"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp"
+            tools:text="Cat Origin"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
